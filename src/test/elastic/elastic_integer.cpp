@@ -20,6 +20,10 @@ namespace {
         using cnl::digits;
 
         static_assert(digits<elastic_integer<7, int>>::value == 7, "elastic_integer test failed");
+//        static_assert(identical(elastic_integer{128_c}, elastic_integer<8>{128}), "elastic_integer test failed");
+//        static_assert(identical(elastic_integer{127_c}, elastic_integer<7>{127}), "elastic_integer test failed");
+//        static_assert(identical(elastic_integer{-128_c}, elastic_integer<8>{-128}), "elastic_integer test failed");
+//        static_assert(identical(elastic_integer{-127_c}, elastic_integer<7>{-127}), "elastic_integer test failed");
     }
 
     namespace test_from_value {
